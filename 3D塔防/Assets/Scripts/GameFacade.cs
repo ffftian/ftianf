@@ -17,7 +17,7 @@ public class GameFacade : MonoBehaviour {
         }
     }
     private UIManager uiMng;
-
+    private GameManager gameMng;
 
 
 
@@ -25,7 +25,11 @@ public class GameFacade : MonoBehaviour {
     // Use this for initialization
     void Start () {
         uiMng = new UIManager(this);
+        gameMng = new GameManager(this);
 
+
+
+        gameMng.OnInit();
     }
 	
 	// Update is called once per frame

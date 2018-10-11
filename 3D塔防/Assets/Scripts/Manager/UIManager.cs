@@ -1,41 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using UnityEngine;
-using LitJson;
-using System;
+
 
 public class UIManager : BaseMnager
 {
 
-    private Dictionary<string, string> panelPathDict;//存储所有面板Prefab的路径
+    private Dictionary<UIFabs, string> panelPathDict;//存储所有面板Prefab的路径
 
     //private UIPanelType panelTypeToPush = UIPanelType.None;
 
     public UIManager(GameFacade facade) : base(facade)
     {
-        ParseUIPanelTypeJson();
+        //ParseUIPanelTypeJson();
     }
 
 
 
 
-    private void ParseUIPanelTypeJson()
-    {
-        panelPathDict = new Dictionary<string, string>();
+    //private void ParseUIPanelTypeJson()
+    //{
+    //    panelPathDict = new Dictionary<UIFabs, string>();
 
-        JsonData data;
+    //    JsonData data;
 
-        data = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/Resources/Texts/Prefabsdath.Json.txt"));
+    //    data = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/Resources/Texts/Prefabsdath.Json.txt"));
 
-        for(int i=0;i<data.Count;i++)
-        {
-            string[] temp = data[i][0].ToString().Split('/');
-            panelPathDict.Add(temp[2], data[i][0].ToString());
-        }
+    //    for(int i=0;i<data.Count;i++)
+    //    {
+    //        string[] temp = data[i][0].ToString().Split('/');
+
+    //        UIFabs types= (UIFabs)Enum.Parse(typeof(UIFabs), temp[2]);
+
+    //        panelPathDict.Add(types, data[i][0].ToString());
+    //    }
 
 
 
-    }
+    //}
 
 }

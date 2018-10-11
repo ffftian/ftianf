@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum UIPanelType
+public enum UIFabs
 {
     None,
-    placemag,
+}
+public enum GameFabs
+{
+    None,
+    Cube,
 }

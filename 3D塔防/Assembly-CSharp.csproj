@@ -62,10 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameFacade.cs" />
+    <Compile Include="Assets\Scripts\LoadScene.cs" />
     <Compile Include="Assets\Scripts\Manager\BaseMnager.cs" />
+    <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
     <Compile Include="Assets\Scripts\Manager\UIpanel\BasePanel.cs" />
     <Compile Include="Assets\Scripts\Manager\UIpanel\UIPlaces.cs" />
+    <Compile Include="Assets\UIFramework\Extension\DictionaryExtension.cs" />
     <Compile Include="Assets\UIFramework\UIPanelType.cs" />
     <None Include="Assets\Resources\Texts\Prefabsdath.Json.txt" />
     <None Include="Assets\Resources\Texts\Map.txt" />
